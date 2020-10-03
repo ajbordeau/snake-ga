@@ -1,6 +1,6 @@
 - step:
     name: train-model
-    image: tensorflow/tensorflow:2.2.0-devel-gpu
+    image: tensorflow/tensorflow:0.12.1-devel-gpu
     command: python train.py {parameters}
     parameters:
       - name: display
