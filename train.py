@@ -283,7 +283,7 @@ def run(display_option, speed, params):
             agent.replay_new(agent.memory, params['batch_size'])
         counter_games += 1
         total_score += game.score
-        print(f'Game {counter_games}      Score: {game.score}')
+        print('Game {counter_games}      Score: {game.score}')
         score_plot.append(game.score)
         counter_plot.append(counter_games)
     mean, stdev = get_mean_stdev(score_plot)
