@@ -1,4 +1,15 @@
 - step:
-name: snake-game
-image: tensorflow/tensorflow:2.2.0-devel
-command: python snakeClass.py --display=True --speed=50
+    name: train-model
+    image: tensorflow/tensorflow:2.2.0-devel-gpu
+    command: python train.py {parameters}
+    parameters:
+      - name: display
+        type: bool
+        pass-as: --display={v}
+        description: display or not
+        default: True
+      - name: speed
+        type: integer
+        pass-as: --speed={v}
+        description: speed of snake
+        default: 50
