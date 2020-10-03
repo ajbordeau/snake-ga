@@ -1,7 +1,7 @@
 import os
-import pygame
 import argparse
 import numpy as np
+import pygame
 import seaborn as sns
 import matplotlib.pyplot as plt
 from DQN import DQNAgent
