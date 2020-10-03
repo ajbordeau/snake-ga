@@ -1,0 +1,4 @@
+- step:
+	name: snake-game
+	image: tensorflow/tensorflow:2.2.0-devel
+	command: python snakeClass.py --display=True --speed=50
